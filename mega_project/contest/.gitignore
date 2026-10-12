@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment Variables & Secrets
+.env
+*.env.local
+
+# Logs
+*.log
+ganache.log
+server.log
+
+# Blockchain state
+ganache_data/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

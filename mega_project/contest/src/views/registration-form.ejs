@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/registration_from.css" rel="stylesheet" type="text/css">
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form method="post" action="/register" >
+            <h2 class="title">Sign up</h2>
+            <% if (typeof alertMsg != 'undefined' && alertMsg) { %>
+              <div style="margin-bottom: 15px; padding: 10px 15px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.95rem; <%= alertMsg.includes('✓') || alertMsg.includes('successfully') ? 'background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9;' : 'background: #ffebee; color: #c62828; border: 1px solid #ffcdd2;' %>">
+                <%= alertMsg %>
+                <% if (alertMsg.includes('✓') || alertMsg.includes('successfully') || alertMsg.includes('already exists')) { %>
+                  <div style="margin-top: 10px;">
+                    <a href="/login" class="btn" style="background: #00bcd4; color: white; text-decoration: none; padding: 6px 18px; border-radius: 20px; display: inline-block; font-size: 0.85rem;">Go to Login &rarr;</a>
+                  </div>
+                <% } %>
+              </div>
+            <% } %>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Name" name="first_name" required />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email"  name="email_address" required />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" name="password" required />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Confirm Password" name="confirm_password" required />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+           
+            
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>One of us?</h3>
+            <p>
+              If you have already signed up , that's great !! 
+              Please LOGIN 
+            </p>
+            <a href="/login"><button class="btn transparent" id="sign-up-btn">
+              Login
+            </button>
+            </a>
+          </div>
+          <img src="img/home_page.png" class="image" alt="" />
+        </div>
+      </div>
+
+    </div>
+
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+# ====================================================================
+# Git Ignore Configuration for E-Voting Blockchain DApp
+# ====================================================================
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment Variables & Secrets
+.env
+**/.env
+*.env.local
+*.env.*.local
+
+# Logs and Runtime Artifacts
+*.log
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+ganache.log
+server.log
+
+# Local Blockchain & Provider Storage
+ganache_data/
+**/ganache_data/
+
+# Raw Screenshots Folder in Root (Curated screenshots are tracked in docs/screenshots/)
+/Screenshots/
+/screenshots/
+
+# Precompiled Solc Compilers & Old Binaries
+soljson-*.js
+/bin/
+/__MACOSX/
+
+# IDE and OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
