@@ -166,43 +166,37 @@ New voters create a secure account with full name, email, and password.
   <img src="docs/screenshots/02_user_signup.png" alt="Voter Sign Up" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
 </p>
 
-#### Step 3: Secure Voter Authentication
-Voter login with encrypted session tokens and credential verification.
-<p align="center">
-  <img src="docs/screenshots/03_user_login.png" alt="Voter Login" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
-</p>
-
-#### Step 4: Voter Dashboard & Election Manual
+#### Step 3: Voter Dashboard & Election Manual
 Comprehensive orientation detailing election rules, age criteria (18+), Aadhar verification steps, and balloting procedures.
 <p align="center">
   <img src="docs/screenshots/04_voter_guidelines.png" alt="Voter Guidelines" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
 </p>
 
-#### Step 5: Aadhar KYC & Ethereum Wallet Whitelisting
+#### Step 4: Aadhar KYC & Ethereum Wallet Whitelisting
 Voters input their 12-digit Aadhar number and link their active Ethereum wallet address with a single-click "USE CONNECTED WALLET" button or demo presets.
 <p align="center">
   <img src="docs/screenshots/05_voter_kyc_registration.png" alt="Voter KYC" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
 </p>
 
-#### Step 6: On-Chain Whitelisting Confirmation
+#### Step 5: On-Chain Whitelisting Confirmation
 Instant confirmation verifying that the user's wallet address has been whitelisted on the Ethereum blockchain.
 <p align="center">
   <img src="docs/screenshots/06_voter_registration_success.png" alt="Registration Success" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
 </p>
 
-#### Step 7: Live Ballot Screen
+#### Step 6: Live Ballot Screen
 The voter enters the voting booth. If the wallet is whitelisted and the election is in **Phase 1 (Live)**, interactive candidate cards are displayed with full qualifications.
 <p align="center">
   <img src="docs/screenshots/07_voting_dashboard_live.png" alt="Voting Dashboard Live" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
 </p>
 
-#### Step 8: MetaMask Web3 Transaction Authorization
+#### Step 7: MetaMask Web3 Transaction Authorization
 The voter clicks "Vote for Candidate". A confirmation modal appears, prompting the voter to cryptographically sign the zero-value Ethereum transaction via MetaMask.
 <p align="center">
   <img src="docs/screenshots/08_vote_confirmation_metamask.png" alt="MetaMask Vote Confirmation" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
 </p>
 
-#### Step 9: Tamper-Proof Vote Receipt & Locked State
+#### Step 8: Tamper-Proof Vote Receipt & Locked State
 Once the block is mined on Ganache, the UI automatically locks further voting attempts, updates the green receipt badge ("YOUR VOTED CANDIDATE"), and prevents double voting.
 <p align="center">
   <img src="docs/screenshots/09_vote_successfully_recorded.png" alt="Vote Successfully Recorded" width="850" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
@@ -451,7 +445,7 @@ For testing and demonstration purposes:
 | Role | Email / ID | Password | Access Rights |
 | :--- | :--- | :--- | :--- |
 | **Admin (Election Commission)** | `admin@gmail.com` | `admin` | Candidate management, phase transitions, voter approvals, election conclusion |
-| **Voter Account 1** | `omkarahirrao2005@gmail.com` | `Omkar@2005` | Voter registration, Aadhar KYC, balloting, live receipt viewing |
+| **Voter Account 1** | `voter1@gmail.com` | `Voter@123` | Voter registration, Aadhar KYC, balloting, live receipt viewing |
 | **Demo Aadhar Numbers** | `123412341234`, `987698769876` | N/A | 12-digit standard test identifiers |
 
 ---
