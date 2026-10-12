@@ -63,26 +63,26 @@ The dApp employs a **Hybrid Web3 / Web2 Architecture** balancing cryptographic s
 
 ```mermaid
 graph TD
-    subgraph Client Layer
-        Voter[Voter Browser]
-        Admin[Admin Browser]
-        MetaMask[MetaMask Extension]
+    subgraph Client_Layer ["Client Layer"]
+        Voter["Voter Browser"]
+        Admin["Admin Browser"]
+        MetaMask["MetaMask Extension"]
     end
 
-    subgraph Application Server
-        Express[Express / Node.js Server]
-        LiteServer[Lite-Server Front-End]
-        EJS[EJS View Engine / Custom HTML]
+    subgraph Application_Server ["Application Server"]
+        Express["Express / Node.js Server"]
+        LiteServer["Lite-Server Front-End"]
+        EJS["EJS View Engine / Custom HTML"]
     end
 
-    subgraph Data & Identity Layer
-        Supabase[(Supabase PostgreSQL)]
-        Auth[Aadhar KYC & Session Store]
+    subgraph Data_Identity_Layer ["Data & Identity Layer"]
+        Supabase[("Supabase PostgreSQL")]
+        Auth["Aadhar KYC & Session Store"]
     end
 
-    subgraph Blockchain Layer (EVM)
-        Ganache[Ganache Local Node :7545]
-        ContestSC[Contest.sol Smart Contract]
+    subgraph Blockchain_Layer ["Blockchain Layer (EVM)"]
+        Ganache["Ganache Local Node (Port 7545)"]
+        ContestSC["Contest.sol Smart Contract"]
     end
 
     Voter -->|HTTP / EJS| LiteServer
@@ -95,10 +95,10 @@ graph TD
     Express -->|Aadhar Validation| Auth
 ```
 
-### Architectural Workflow Diagram (Report Specification)
+### 🔄 End-to-End Workflow Architecture Diagram
 
 <p align="center">
-  <img src="docs/screenshots/16_system_architecture_report.png" alt="System Workflow Diagram" width="800" style="border-radius: 8px; border: 1px solid #e1e4e8;" />
+  <img src="docs/screenshots/workflow_architecture_diagram.png" alt="E-Voting Complete Workflow Diagram" width="950" style="border-radius: 8px; border: 1px solid #e1e4e8; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" />
 </p>
 
 ---

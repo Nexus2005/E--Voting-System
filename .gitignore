@@ -25,9 +25,10 @@ server.log
 ganache_data/
 **/ganache_data/
 
-# Raw Screenshots Folder in Root (Curated screenshots are tracked in docs/screenshots/)
+# Raw Screenshots & Temporary Media in Root (Curated screenshots are tracked in docs/screenshots/)
 /Screenshots/
 /screenshots/
+/Gemini_Generated_Image_*.png
 
 # Precompiled Solc Compilers & Old Binaries
 soljson-*.js
